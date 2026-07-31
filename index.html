@@ -16,7 +16,7 @@
         .container { max-width: 1200px; margin: 0 auto; }
         
         /* Header */
-        header { text-align: center; padding: 60px 0; border-bottom: 1px solid #222; }
+        header { text-align: center; padding: 60px 0 40px; border-bottom: 1px solid #222; }
         h1 { font-size: 3rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 10px; color: #fff; }
         p.subtitle { font-size: 1.25rem; color: #a1a1aa; max-width: 800px; margin: 0 auto 30px; }
         .contact-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
@@ -76,20 +76,33 @@
             font-weight: 500; 
         }
 
-        /* Skills */
-        .skills-list { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; }
-        .skills-list li { 
-            background: #18181b; 
-            border: 1px solid #27272a; 
-            padding: 10px 20px; 
-            border-radius: 30px; 
-            font-size: 0.95rem; 
-            color: #d4d4d8; 
+        /* Skills Section */
+        .skills-container {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 40px;
         }
-        .skills-list li.highlight {
-            border-color: #e11d48;
-            color: #fff;
-            font-weight: 600;
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .skill-box h4 {
+            color: #e11d48;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .skills-list { display: flex; flex-direction: column; gap: 8px; list-style: none; }
+        .skills-list li { 
+            background: #27272a; 
+            border: 1px solid #3f3f46; 
+            padding: 8px 14px; 
+            border-radius: 12px; 
+            font-size: 0.88rem; 
+            color: #d4d4d8; 
         }
 
         footer { text-align: center; padding: 60px 0 20px; color: #52525b; font-size: 0.9rem; border-top: 1px solid #222; margin-top: 60px; }
@@ -101,228 +114,17 @@
         <!-- Header -->
         <header>
             <h1>Diana Ovchinnikova</h1>
-            <p class="subtitle">Graphic & Commercial Visual Designer specializing in Logo Design, E-Commerce Infographics, Brand Identity & Digital Ads</p>
+            <p class="subtitle">Graphic & Commercial Visual Designer specializing in Food Advertising, Logo Design, E-Commerce Infographics & Digital Performance Ads</p>
             <div class="contact-btns">
                 <a href="mailto:tishmon.diana@gmail.com" class="contact-btn">Email: tishmon.diana@gmail.com</a>
                 <a href="mailto:diana.ovchinnikova25@gmail.com" class="contact-btn secondary">Email: diana.ovchinnikova25@gmail.com</a>
             </div>
         </header>
 
-        <!-- Section 1: Logo Design & Branding -->
-        <section>
-            <h2 class="section-title">Logo Design & Brand Identity Concepts</h2>
-            <p class="section-desc">Vector logos, modern brand marks, and identity concepts created for commercial businesses, retail brands, and children's products.</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <img src="moolat_back.png" alt="Moolat Vector Logo">
-                    <div class="card-info">
-                        <h3>MOOLAT Tech & Gaming Brand Mark</h3>
-                        <p>Modern geometric vector monogram logo with sharp, high-contrast red-on-black aesthetic.</p>
-                        <span class="tag">Vector Logo / Tech</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="2_3.jpg" alt="Malva Floral Brand Identity">
-                    <div class="card-info">
-                        <h3>Malva Flowers & Strawberries Identity</h3>
-                        <p>Elegant, modern sans-serif logo design framed with rich aesthetic floral background photography.</p>
-                        <span class="tag">Boutique & Retail Branding</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="4.1.png" alt="Somcha Toys Children Brand Logo">
-                    <div class="card-info">
-                        <h3>SOMCHA Toys Brand Mark</h3>
-                        <p>Playful, friendly identity combining custom line-art character iconography with playful script typography.</p>
-                        <span class="tag">Children's Brand Logo</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="logo_2_2.jpg" alt="Bestrumpler Logistics Logo">
-                    <div class="card-info">
-                        <h3>Bestrümpler Logistics Logo</h3>
-                        <p>Dynamic transport logo integrating speedometer arc geometry with delivery truck typography elements.</p>
-                        <span class="tag">Corporate Logo Design</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 2: E-Commerce & Marketplace Infographics -->
-        <section>
-            <h2 class="section-title">E-Commerce & Marketplace Product Infographics</h2>
-            <p class="section-desc">High-converting listing images designed to highlight key product benefits, technical features, and call-to-actions for international online stores.</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <img src="1_4.png" alt="Ninja Portable Blender Infographic">
-                    <div class="card-info">
-                        <h3>Ninja Portable Blender Listing</h3>
-                        <p>3D-style depth composition featuring flying fruit splashes, specs badges, and clean feature callouts.</p>
-                        <span class="tag">E-Commerce / Amazon</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="2_2.png" alt="Kitchen Scales Product Card">
-                    <div class="card-info">
-                        <h3>Digital Kitchen Scale Card</h3>
-                        <p>Dynamic perspective scene showcasing product application with floating ingredients and battery bonus badge.</p>
-                        <span class="tag">Product Listing Design</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="Без имени-1.png" alt="Columbia Thermal Underwear Card">
-                    <div class="card-info">
-                        <h3>Columbia Thermal Wear Visual</h3>
-                        <p>Winter-themed composite layout with promo offer badges and gift-with-purchase callout.</p>
-                        <span class="tag">Retail & Fashion Ad</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="3_4.png" alt="Dental Care Product Card">
-                    <div class="card-info">
-                        <h3>Dental Veneers Promo Visual</h3>
-                        <p>Direct-response marketing layout with close-up macro inset and benefit checkmarks.</p>
-                        <span class="tag">Direct Response Ad</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="1_3.png" alt="Snap On Smile Product Card">
-                    <div class="card-info">
-                        <h3>Snap-On Smile Benefit Card</h3>
-                        <p>Clean pastel visual hierarchy highlighting functional product features and packaging.</p>
-                        <span class="tag">Infographic Card</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 3: Financial & Investment Marketing -->
-        <section>
-            <h2 class="section-title">Financial & Energy Investment Campaigns</h2>
-            <p class="section-desc">High-converting social media creatives and promo banners designed for energy sector investment offers (Hidroelectrica & BRUA projects).</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <img src="ГЭС3.1.png" alt="Hidroelectrica Investment Poster">
-                    <div class="card-info">
-                        <h3>Hydroelectric Investment Banner</h3>
-                        <p>Trust-building promotional layout incorporating state guarantee badges, clean typography, and bold financial incentives.</p>
-                        <span class="tag">FinTech / Investment Ad</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="ГЭС1.png" alt="Hidroelectrica Mobile Payment Creative">
-                    <div class="card-info">
-                        <h3>Passive Income App Creative</h3>
-                        <p>UI mockup integration highlighting seamless payout notifications alongside industrial hydroelectric background imagery.</p>
-                        <span class="tag">UI Mockup & Ad</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="ГАЗ2.png" alt="BRUA Romania Financial Growth Banner">
-                    <div class="card-info">
-                        <h3>Financial Freedom Campaign (BRUA)</h3>
-                        <p>Emotional visual framing with phone mockup overlays designed for direct-response marketing campaigns.</p>
-                        <span class="tag">Performance Marketing</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="ГАЗ3.1.png" alt="BRUA Energy Infrastructure Visual">
-                    <div class="card-info">
-                        <h3>Energy Infrastructure Promo Visual</h3>
-                        <p>High-contrast industrial photo compositing focused on national public project investments.</p>
-                        <span class="tag">Commercial Banner</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 4: Gaming & Esports Marketing -->
-        <section>
-            <h2 class="section-title">Gaming & Esports Marketing Design</h2>
-            <p class="section-desc">Promotional graphics, social media banners, and high-energy visuals created for "PLAY HUB" gaming console club and esports lounge.</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <img src="5.png" alt="Play Hub Characters Poster">
-                    <div class="card-info">
-                        <h3>Gaming Lounge Promo Poster</h3>
-                        <p>High-energy composite featuring iconic gaming & sports figures with custom neon typography and dark mode theme.</p>
-                        <span class="tag">Esports / Gaming</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="3_3.png" alt="Play Hub Gamer Social Media Post">
-                    <div class="card-info">
-                        <h3>Atmospheric Gamer Lifestyle Ad</h3>
-                        <p>Vibrant ambient lighting photo edit paired with bold promotional typography for active social media engagement.</p>
-                        <span class="tag">Social Media Creative</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="4_3.png" alt="FIFA 24 Tournament Poster">
-                    <div class="card-info">
-                        <h3>EA Sports FIFA 24 Tournament Visual</h3>
-                        <p>Electric aura effects and dynamic photo compositing focused on console gaming promos.</p>
-                        <span class="tag">Visual Compositing</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 5: Branding Case Study -->
-        <section>
-            <h2 class="section-title">Brand Identity & Print Design Case Study</h2>
-            <p class="section-desc">Full brand visual identity development for Bestrümpler (Moving & Logistics Company), including business cards and promotional print collateral.</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <img src="bs_front.png" alt="Business Card Front Design">
-                    <div class="card-info">
-                        <h3>Corporate Business Card (Front)</h3>
-                        <p>High-contrast, bold corporate identity layout with prominent brand name and domain positioning.</p>
-                        <span class="tag">Business Card</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="bs_back.png" alt="Business Card Back Design">
-                    <div class="card-info">
-                        <h3>Corporate Business Card (Back)</h3>
-                        <p>Clear service taxonomy, icon layout, and organized contact grid using company yellow & black brand colors.</p>
-                        <span class="tag">Print Layout</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="flayer_1.png" alt="Promotional Flyer Design">
-                    <div class="card-info">
-                        <h3>Marketing Flyer / Leaflet</h3>
-                        <p>Engaging promotional print material with custom geometry, iconography, and high-impact call to action.</p>
-                        <span class="tag">Flyer & Collateral</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 6: Commercial Food Advertising -->
+        <!-- Section 1: Commercial Food Advertising -->
         <section>
             <h2 class="section-title">Food & Retail Promotional Campaigns</h2>
-            <p class="section-desc">A collection of high-converting social media posters and promotional creatives designed for international fast-food chains.</p>
+            <p class="section-desc">A collection of high-converting social media posters, promotional creatives, and appetising visual compositing designed for international fast-food chains.</p>
             
             <div class="grid">
                 <div class="card">
@@ -408,23 +210,264 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Section 2: Logo Design & Branding -->
         <section>
-            <h2 class="section-title">Software & Capabilities</h2>
-            <ul class="skills-list">
-                <li class="highlight">Adobe Photoshop</li>
-                <li class="highlight">Figma</li>
-                <li class="highlight">Canva</li>
-                <li class="highlight">Adobe After Effects</li>
-                <li class="highlight">Adobe Illustrator</li>
-                <li>Logo Design & Branding</li>
-                <li>E-Commerce Product Infographics</li>
-                <li>Marketplace Card Design (Amazon, eBay, E-shops)</li>
-                <li>Performance Marketing Creatives</li>
-                <li>Gaming & Esports Visuals</li>
-                <li>Print Collateral (Business Cards, Flyers)</li>
-                <li>Photo Compositing & Motion Graphics</li>
-            </ul>
+            <h2 class="section-title">Logo Design & Brand Identity Concepts</h2>
+            <p class="section-desc">Vector logos, modern brand marks, and identity concepts created for commercial businesses, retail brands, and children's products.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="moolat_back.png" alt="Moolat Vector Logo">
+                    <div class="card-info">
+                        <h3>MOOLAT Tech & Gaming Brand Mark</h3>
+                        <p>Modern geometric vector monogram logo with sharp, high-contrast red-on-black aesthetic.</p>
+                        <span class="tag">Vector Logo / Tech</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="logo_2.png" alt="Malva Floral Brand Identity">
+                    <div class="card-info">
+                        <h3>Malva Flowers & Strawberries Identity</h3>
+                        <p>Elegant, modern sans-serif logo design framed with rich aesthetic floral background photography.</p>
+                        <span class="tag">Boutique & Retail Branding</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="4.1.png" alt="Somcha Toys Children Brand Logo">
+                    <div class="card-info">
+                        <h3>SOMCHA Toys Brand Mark</h3>
+                        <p>Playful, friendly identity combining custom line-art character iconography with playful script typography.</p>
+                        <span class="tag">Children's Brand Logo</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="logo_2_2.jpg" alt="Bestrumpler Logistics Logo">
+                    <div class="card-info">
+                        <h3>Bestrümpler Logistics Logo</h3>
+                        <p>Dynamic transport logo integrating speedometer arc geometry with delivery truck typography elements.</p>
+                        <span class="tag">Corporate Logo Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: E-Commerce & Marketplace Infographics -->
+        <section>
+            <h2 class="section-title">E-Commerce & Marketplace Product Infographics</h2>
+            <p class="section-desc">High-converting listing images designed to highlight key product benefits, technical features, and call-to-actions for international online stores.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="1_4.png" alt="Ninja Portable Blender Infographic">
+                    <div class="card-info">
+                        <h3>Ninja Portable Blender Listing</h3>
+                        <p>3D-style depth composition featuring flying fruit splashes, specs badges, and clean feature callouts.</p>
+                        <span class="tag">E-Commerce / Amazon</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="2_2.png" alt="Kitchen Scales Product Card">
+                    <div class="card-info">
+                        <h3>Digital Kitchen Scale Card</h3>
+                        <p>Dynamic perspective scene showcasing product application with floating ingredients and battery bonus badge.</p>
+                        <span class="tag">Product Listing Design</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="Без имени-1.png" alt="Columbia Thermal Underwear Card">
+                    <div class="card-info">
+                        <h3>Columbia Thermal Wear Visual</h3>
+                        <p>Winter-themed composite layout with promo offer badges and gift-with-purchase callout.</p>
+                        <span class="tag">Retail & Fashion Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="3_4.png" alt="Dental Care Product Card">
+                    <div class="card-info">
+                        <h3>Dental Veneers Promo Visual</h3>
+                        <p>Direct-response marketing layout with close-up macro inset and benefit checkmarks.</p>
+                        <span class="tag">Direct Response Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="1_3.png" alt="Snap On Smile Product Card">
+                    <div class="card-info">
+                        <h3>Snap-On Smile Benefit Card</h3>
+                        <p>Clean pastel visual hierarchy highlighting functional product features and packaging.</p>
+                        <span class="tag">Infographic Card</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Financial & Investment Marketing -->
+        <section>
+            <h2 class="section-title">Financial & Energy Investment Campaigns</h2>
+            <p class="section-desc">High-converting social media creatives and promo banners designed for energy sector investment offers (Hidroelectrica & BRUA projects).</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="ГЭС3.1.png" alt="Hidroelectrica Investment Poster">
+                    <div class="card-info">
+                        <h3>Hydroelectric Investment Banner</h3>
+                        <p>Trust-building promotional layout incorporating state guarantee badges, clean typography, and bold financial incentives.</p>
+                        <span class="tag">FinTech / Investment Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="ГЭС1.png" alt="Hidroelectrica Mobile Payment Creative">
+                    <div class="card-info">
+                        <h3>Passive Income App Creative</h3>
+                        <p>UI mockup integration highlighting seamless payout notifications alongside industrial hydroelectric background imagery.</p>
+                        <span class="tag">UI Mockup & Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="ГАЗ2.png" alt="BRUA Romania Financial Growth Banner">
+                    <div class="card-info">
+                        <h3>Financial Freedom Campaign (BRUA)</h3>
+                        <p>Emotional visual framing with phone mockup overlays designed for direct-response marketing campaigns.</p>
+                        <span class="tag">Performance Marketing</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="ГАЗ3.1.png" alt="BRUA Energy Infrastructure Visual">
+                    <div class="card-info">
+                        <h3>Energy Infrastructure Promo Visual</h3>
+                        <p>High-contrast industrial photo compositing focused on national public project investments.</p>
+                        <span class="tag">Commercial Banner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Gaming & Esports Marketing -->
+        <section>
+            <h2 class="section-title">Gaming & Esports Marketing Design</h2>
+            <p class="section-desc">Promotional graphics, social media banners, and high-energy visuals created for "PLAY HUB" gaming console club and esports lounge.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="5.png" alt="Play Hub Characters Poster">
+                    <div class="card-info">
+                        <h3>Gaming Lounge Promo Poster</h3>
+                        <p>High-energy composite featuring iconic gaming & sports figures with custom neon typography and dark mode theme.</p>
+                        <span class="tag">Esports / Gaming</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="3_3.png" alt="Play Hub Gamer Social Media Post">
+                    <div class="card-info">
+                        <h3>Atmospheric Gamer Lifestyle Ad</h3>
+                        <p>Vibrant ambient lighting photo edit paired with bold promotional typography for active social media engagement.</p>
+                        <span class="tag">Social Media Creative</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="4_3.png" alt="FIFA 24 Tournament Poster">
+                    <div class="card-info">
+                        <h3>EA Sports FIFA 24 Tournament Visual</h3>
+                        <p>Electric aura effects and dynamic photo compositing focused on console gaming promos.</p>
+                        <span class="tag">Visual Compositing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Branding Case Study -->
+        <section>
+            <h2 class="section-title">Brand Identity & Print Design Case Study</h2>
+            <p class="section-desc">Full brand visual identity development for Bestrümpler (Moving & Logistics Company), including business cards and promotional print collateral.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="bs_front.png" alt="Business Card Front Design">
+                    <div class="card-info">
+                        <h3>Corporate Business Card (Front)</h3>
+                        <p>High-contrast, bold corporate identity layout with prominent brand name and domain positioning.</p>
+                        <span class="tag">Business Card</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="bs_back.png" alt="Business Card Back Design">
+                    <div class="card-info">
+                        <h3>Corporate Business Card (Back)</h3>
+                        <p>Clear service taxonomy, icon layout, and organized contact grid using company yellow & black brand colors.</p>
+                        <span class="tag">Print Layout</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="flayer_1.png" alt="Promotional Flyer Design">
+                    <div class="card-info">
+                        <h3>Marketing Flyer / Leaflet</h3>
+                        <p>Engaging promotional print material with custom geometry, iconography, and high-impact call to action.</p>
+                        <span class="tag">Flyer & Collateral</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Work Ethic Section -->
+        <section>
+            <h2 class="section-title">Skills & Software Proficiency</h2>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <h4>Design Software</h4>
+                        <ul class="skills-list">
+                            <li>Adobe Photoshop</li>
+                            <li>Figma</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe After Effects</li>
+                            <li>Canva</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Specializations</h4>
+                        <ul class="skills-list">
+                            <li>Commercial Food Design</li>
+                            <li>Logo & Vector Identity</li>
+                            <li>E-Commerce Infographics</li>
+                            <li>Marketplace Listings</li>
+                            <li>Performance Ads</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Technical Skills</h4>
+                        <ul class="skills-list">
+                            <li>Digital Compositing</li>
+                            <li>Photo Retouching</li>
+                            <li>Print Layout Prep</li>
+                            <li>Social Media Visuals</li>
+                            <li>UI Mockups</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Soft Skills & Ethic</h4>
+                        <ul class="skills-list">
+                            <li>Fast Learner & Adaptable</li>
+                            <li>Fast Task Turnaround</li>
+                            <li>Effective Communication</li>
+                            <li>Attention to Detail</li>
+                            <li>Client-Focused Approach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer>
