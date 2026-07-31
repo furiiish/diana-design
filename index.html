@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Ovchinnikova | Graphic & Commercial Visual Design Portfolio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: #0f0f11; 
+            color: #f3f4f6; 
+            line-height: 1.6; 
+            padding: 40px 20px; 
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* Header */
+        header { text-align: center; padding: 60px 0; border-bottom: 1px solid #222; }
+        h1 { font-size: 3rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 10px; color: #fff; }
+        p.subtitle { font-size: 1.25rem; color: #a1a1aa; max-width: 800px; margin: 0 auto 30px; }
+        .contact-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .contact-btn { 
+            display: inline-block; 
+            padding: 12px 28px; 
+            background: #e11d48; 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 30px; 
+            font-weight: 600; 
+            transition: background 0.2s, transform 0.2s; 
+        }
+        .contact-btn:hover { background: #be123c; transform: translateY(-2px); }
+        .contact-btn.secondary { background: #27272a; border: 1px solid #3f3f46; }
+        .contact-btn.secondary:hover { background: #3f3f46; }
+
+        /* Sections */
+        .section-title { font-size: 2rem; margin: 60px 0 30px; font-weight: 700; color: #fff; border-left: 4px solid #e11d48; padding-left: 15px; }
+        .section-desc { color: #a1a1aa; margin-top: -20px; margin-bottom: 30px; font-size: 1rem; }
+
+        /* Portfolio Grid */
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px; 
+        }
+        .card { 
+            background: #18181b; 
+            border: 1px solid #27272a; 
+            border-radius: 16px; 
+            overflow: hidden; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 20px 30px rgba(0,0,0,0.5); 
+            border-color: #3f3f46; 
+        }
+        .card img { 
+            width: 100%; 
+            height: 340px; 
+            object-fit: cover; 
+            display: block; 
+        }
+        .card-info { padding: 20px; }
+        .card-info h3 { font-size: 1.25rem; color: #fff; margin-bottom: 8px; }
+        .card-info p { font-size: 0.95rem; color: #a1a1aa; }
+        .tag { 
+            display: inline-block; 
+            background: #27272a; 
+            color: #f4f4f5; 
+            font-size: 0.75rem; 
+            padding: 4px 10px; 
+            border-radius: 12px; 
+            margin-top: 12px; 
+            font-weight: 500; 
+        }
+
+        /* Skills */
+        .skills-list { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; }
+        .skills-list li { 
+            background: #18181b; 
+            border: 1px solid #27272a; 
+            padding: 10px 20px; 
+            border-radius: 30px; 
+            font-size: 0.95rem; 
+            color: #d4d4d8; 
+        }
+        .skills-list li.highlight {
+            border-color: #e11d48;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        footer { text-align: center; padding: 60px 0 20px; color: #52525b; font-size: 0.9rem; border-top: 1px solid #222; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Diana Ovchinnikova</h1>
+            <p class="subtitle">Graphic & Commercial Visual Designer specializing in E-Commerce Product Listing Infographics, Brand Identity & Digital Performance Ads</p>
+            <div class="contact-btns">
+                <a href="mailto:tishmon.diana@gmail.com" class="contact-btn">Email: tishmon.diana@gmail.com</a>
+                <a href="mailto:diana.ovchinnikova25@gmail.com" class="contact-btn secondary">Email: diana.ovchinnikova25@gmail.com</a>
+            </div>
+        </header>
+
+        <!-- Section 1: E-Commerce & Marketplace Infographics -->
+        <section>
+            <h2 class="section-title">E-Commerce & Marketplace Product Infographics</h2>
+            <p class="section-desc">High-converting listing images designed to highlight key product benefits, technical features, and call-to-actions for international online stores.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="1_4.jpg" alt="Ninja Portable Blender Infographic">
+                    <div class="card-info">
+                        <h3>Ninja Portable Blender Listing</h3>
+                        <p>3D-style depth composition featuring flying fruit splashes, specs badges, and clean feature callouts.</p>
+                        <span class="tag">E-Commerce / Amazon</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="2_2.jpg" alt="Kitchen Scales Product Card">
+                    <div class="card-info">
+                        <h3>Digital Kitchen Scale Card</h3>
+                        <p>Dynamic perspective scene showcasing product application with floating ingredients and battery bonus badge.</p>
+                        <span class="tag">Product Listing Design</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="Без имени-1.jpg" alt="Columbia Thermal Underwear Card">
+                    <div class="card-info">
+                        <h3>Columbia Thermal Wear Visual</h3>
+                        <p>Winter-themed composite layout with promo offer badges and gift-with-purchase callout.</p>
+                        <span class="tag">Retail & Fashion Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="3_4.jpg" alt="Dental Care Product Card">
+                    <div class="card-info">
+                        <h3>Dental Veneers Promo Visual</h3>
+                        <p>Direct-response marketing layout with close-up macro inset and benefit checkmarks.</p>
+                        <span class="tag">Direct Response Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="1_3.jpg" alt="Snap On Smile Product Card">
+                    <div class="card-info">
+                        <h3>Snap-On Smile Benefit Card</h3>
+                        <p>Clean pastel visual hierarchy highlighting functional product features and packaging.</p>
+                        <span class="tag">Infographic Card</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Financial & Investment Marketing -->
+        <section>
+            <h2 class="section-title">Financial & Energy Investment Campaigns</h2>
+            <p class="section-desc">High-converting social media creatives and promo banners designed for energy sector investment offers (Hidroelectrica & BRUA projects).</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="GES3.1.jpg" alt="Hidroelectrica Investment Poster">
+                    <div class="card-info">
+                        <h3>Hydroelectric Investment Banner</h3>
+                        <p>Trust-building promotional layout incorporating state guarantee badges, clean typography, and bold financial incentives.</p>
+                        <span class="tag">FinTech / Investment Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="GES1.jpg" alt="Hidroelectrica Mobile Payment Creative">
+                    <div class="card-info">
+                        <h3>Passive Income App Creative</h3>
+                        <p>UI mockup integration highlighting seamless payout notifications alongside industrial hydroelectric background imagery.</p>
+                        <span class="tag">UI Mockup & Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="GAZ2.jpg" alt="BRUA Romania Financial Growth Banner">
+                    <div class="card-info">
+                        <h3>Financial Freedom Campaign (BRUA)</h3>
+                        <p>Emotional visual framing with phone mockup overlays designed for direct-response marketing campaigns.</p>
+                        <span class="tag">Performance Marketing</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="GAZ3.1.jpg" alt="BRUA Energy Infrastructure Visual">
+                    <div class="card-info">
+                        <h3>Energy Infrastructure Promo Visual</h3>
+                        <p>High-contrast industrial photo compositing focused on national public project investments.</p>
+                        <span class="tag">Commercial Banner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Gaming & Esports Marketing -->
+        <section>
+            <h2 class="section-title">Gaming & Esports Marketing Design</h2>
+            <p class="section-desc">Promotional graphics, social media banners, and high-energy visuals created for "PLAY HUB" gaming console club and esports lounge.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="5.jpg" alt="Play Hub Characters Poster">
+                    <div class="card-info">
+                        <h3>Gaming Lounge Promo Poster</h3>
+                        <p>High-energy composite featuring iconic gaming & sports figures with custom neon typography and dark mode theme.</p>
+                        <span class="tag">Esports / Gaming</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="3_3.jpg" alt="Play Hub Gamer Social Media Post">
+                    <div class="card-info">
+                        <h3>Atmospheric Gamer Lifestyle Ad</h3>
+                        <p>Vibrant ambient lighting photo edit paired with bold promotional typography for active social media engagement.</p>
+                        <span class="tag">Social Media Creative</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="4_3.jpg" alt="FIFA 24 Tournament Poster">
+                    <div class="card-info">
+                        <h3>EA Sports FIFA 24 Tournament Visual</h3>
+                        <p>Electric aura effects and dynamic photo compositing focused on console gaming promos.</p>
+                        <span class="tag">Visual Compositing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Branding Case Study -->
+        <section>
+            <h2 class="section-title">Brand Identity & Print Design Case Study</h2>
+            <p class="section-desc">Full brand visual identity development for Bestrümpler (Moving & Logistics Company), including logo design, business cards, and promotional print collateral.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="logo_2.png" alt="Bestrümpler Logo Design">
+                    <div class="card-info">
+                        <h3>Logo Design & Iconography</h3>
+                        <p>Custom vector logo combining a delivery truck concept with speedometer elements to project speed and reliability.</p>
+                        <span class="tag">Logo & Identity</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="bs_front.png" alt="Business Card Front Design">
+                    <div class="card-info">
+                        <h3>Corporate Business Card (Front)</h3>
+                        <p>High-contrast, bold corporate identity layout with prominent brand name and domain positioning.</p>
+                        <span class="tag">Business Card</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="bs_back.jpg" alt="Business Card Back Design">
+                    <div class="card-info">
+                        <h3>Corporate Business Card (Back)</h3>
+                        <p>Clear service taxonomy, icon layout, and organized contact grid using company yellow & black brand colors.</p>
+                        <span class="tag">Print Layout</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="flayer_1.jpg" alt="Promotional Flyer Design">
+                    <div class="card-info">
+                        <h3>Marketing Flyer / Leaflet</h3>
+                        <p>Engaging promotional print material with custom geometry, iconography, and high-impact call to action.</p>
+                        <span class="tag">Flyer & Collateral</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Commercial Food Advertising -->
+        <section>
+            <h2 class="section-title">Food & Retail Promotional Campaigns</h2>
+            <p class="section-desc">A collection of high-converting social media posters and promotional creatives designed for international fast-food chains.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="1.jpg" alt="Pizza Promo Poster">
+                    <div class="card-info">
+                        <h3>Pizza Hut Special Offer</h3>
+                        <p>High-contrast promotional visual with custom typography and dynamic layout.</p>
+                        <span class="tag">Commercial Design</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="2.jpg" alt="Today's Special Pizza">
+                    <div class="card-info">
+                        <h3>"Today's Special" Campaign</h3>
+                        <p>Eye-catching dual-product composition focused on promo codes.</p>
+                        <span class="tag">Social Media Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="3.jpg" alt="50% Off Promo">
+                    <div class="card-info">
+                        <h3>50% Off Discount Visual</h3>
+                        <p>Bold, minimalist layout emphasizing promotional discount metrics.</p>
+                        <span class="tag">Promo Creative</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="4.jpg" alt="Special Offer Pizza">
+                    <div class="card-info">
+                        <h3>Fire & Flavor Campaign</h3>
+                        <p>Dynamic background compositing with lighting to highlight freshness.</p>
+                        <span class="tag">Visual Compositing</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="12.jpg" alt="Burger Promo Five Guys">
+                    <div class="card-info">
+                        <h3>Five Guys Burger Campaign</h3>
+                        <p>Appetizing food layering with clean typography for fast-casual ads.</p>
+                        <span class="tag">Food Styling / Ad</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="1_2.jpg" alt="McDonalds Fire Burger">
+                    <div class="card-info">
+                        <h3>McDonald's Flame Burger Concept</h3>
+                        <p>Wood & fire background compositing highlighting premium ingredients.</p>
+                        <span class="tag">Digital Compositing</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="3_2.jpg" alt="McDonalds Hot Burger">
+                    <div class="card-info">
+                        <h3>McDonald's Dark Edition Visual</h3>
+                        <p>Dark mode promotional banner with splash effects for delivery apps.</p>
+                        <span class="tag">Banner Design</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="4_2.jpg" alt="Hot & Fresh Burger">
+                    <div class="card-info">
+                        <h3>Hot & Fresh Hometown Burger</h3>
+                        <p>Energetic design featuring custom splash vectors and badge layout.</p>
+                        <span class="tag">Ad Campaign</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="11.jpg" alt="70% Off Burger Ad">
+                    <div class="card-info">
+                        <h3>70% Off Mega Sale Poster</h3>
+                        <p>High-impact typography and focal lighting highlighting burger layers.</p>
+                        <span class="tag">Promo Banner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2 class="section-title">Software & Capabilities</h2>
+            <ul class="skills-list">
+                <li class="highlight">Adobe Photoshop</li>
+                <li class="highlight">Figma</li>
+                <li class="highlight">Canva</li>
+                <li class="highlight">Adobe After Effects</li>
+                <li class="highlight">Adobe Illustrator</li>
+                <li>E-Commerce Product Infographics</li>
+                <li>Marketplace Card Design (Amazon, eBay, E-shops)</li>
+                <li>Performance Marketing Creatives</li>
+                <li>Brand Identity & Logo Design</li>
+                <li>Gaming & Esports Visuals</li>
+                <li>Print Collateral (Business Cards, Flyers)</li>
+                <li>Photo Compositing & Motion Graphics</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2026 Diana Ovchinnikova. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
